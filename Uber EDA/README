@@ -1,0 +1,68 @@
+Analysis of Ride-Hailing Services in the NCR Region
+📊 Project Overview
+This project performs an in-depth exploratory data analysis (EDA) on a dataset of ride-hailing bookings from the National Capital Region (NCR). The goal of this analysis is to uncover patterns, trends, and actionable insights into customer and driver behavior, service performance, and operational efficiency. By examining various aspects of the ride data, we aim to understand the key factors that drive the business.
+
+💾 Dataset
+The analysis is based on the ncr_ride_bookings.csv dataset. This dataset contains transactional data for each ride booking, including details about the time, locations, status, vehicle type, and ratings.
+
+Key columns include:
+
+Date, Time: Timestamp of the booking.
+
+Booking Status: The final status of the ride (e.g., Completed, Cancelled, No Driver Found).
+
+Vehicle Type: The type of vehicle booked (e.g., Auto, Go Mini, Sedan).
+
+Pickup Location, Drop Location: The start and end points of the journey.
+
+Booking Value, Ride Distance: The fare and distance of the completed ride.
+
+Driver Ratings, Customer Rating: Ratings provided by each party after a completed ride.
+
+Reason for cancelling by Customer, Driver Cancellation Reason: Reasons for ride cancellations.
+
+📈 Analysis Performed
+The project explores the data from multiple angles to extract meaningful insights. The core components of the analysis include:
+
+Time Series Analysis: Examining the total number of rides and revenue generated over time to identify trends and seasonality.
+
+Booking Status Distribution: Analyzing the proportion of completed, cancelled, and unfulfilled rides to assess service reliability.
+
+Vehicle Type Popularity: Identifying the most frequently used vehicle types to understand customer preferences.
+
+Geospatial Analysis: Determining the top 10 most popular pickup and drop-off locations to identify high-traffic corridors.
+
+Cancellation Analysis: A deep dive into the primary reasons why both customers and drivers cancel rides.
+
+Correlation Analysis: Using a heatmap to understand the statistical relationships between numerical variables like booking value, ride distance, and ratings.
+
+💡 Key Insights
+Our analysis revealed several key findings that are crucial for understanding the service's performance:
+
+High Demand vs. Reliability Issues: While there is stable, consistent demand for rides, a significant portion of bookings (~20%) are unfulfilled due to driver cancellations or a lack of available drivers.
+
+Price is Driven by Distance: The fare of a ride has a near-perfect positive correlation (+0.93) with the distance traveled. This confirms that distance is the primary factor in the pricing model.
+
+Customer Experience is About Punctuality: The top reason for customer cancellations is the driver not moving towards the pickup location. This highlights that accurate ETAs and driver reliability are the biggest pain points for customers.
+
+Ratings are Independent Experiences: There is no statistical link between a driver's rating and a customer's rating. A good ride experience is subjective and rated independently by each party, unaffected by the trip's cost or distance.
+
+Budget Rides Dominate the Market: The most popular vehicle types are the most economical ones (Go Mini and Auto), indicating a price-sensitive customer base.
+
+🖼️ Visualizations
+The analysis is supported by a variety of visualizations to make the findings clear and easy to understand:
+
+Line charts for time series data.
+
+Countplot for booking status distribution.
+
+Bar charts for top locations, vehicle types, and cancellation reasons.
+
+A correlation heatmap to show relationships between numerical variables.
+
+🛠️ Tools and Libraries
+This analysis was conducted using Python and the following core data science libraries:
+
+Pandas: For data manipulation and cleaning.
+
+Matplotlib & Seaborn: For data visualization and creating plots.
